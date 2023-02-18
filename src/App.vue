@@ -1,13 +1,21 @@
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</template>
+  <mainNav />
+  <hero /> 
+ </template>
 
 <script>
-import "@/assets/tailwind.css";
+import mainNav from "@/components/Navigation/MainNav.vue";
+
+
+import hero from "@/components/JobSearch/Hero.vue";
+
 export default {
   name: "App",
-  components: {},
+
+
+  components: {
+    mainNav,
+    hero,
+  },
 };
 </script>

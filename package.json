@@ -5,10 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "test:unit": "vue-cli-service test:unit --testMatch='**/*.test.js' --coverage",
+    "test:watch": "vue-cli-service test:unit --testMatch='**/*.test.js' --watch",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
     "autoprefixer": "^10",
     "core-js": "^3.8.3",
     "postcss": "^8",
